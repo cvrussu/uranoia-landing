@@ -92,8 +92,8 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem}
 .footer-copy{font-size:.82rem;width:100%;text-align:center;margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08)}
 .icon-svg{width:20px;height:20px;fill:currentColor}
 @media(max-width:768px){.nav-links{display:none}.hamburger{display:flex}.nav-links.open{display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:var(--navy);padding:1.5rem 2rem;gap:1rem;border-bottom:1px solid rgba(125,211,192,.1)}.contact-grid{grid-template-columns:1fr}section{padding:4rem 1.25rem}}
-.fade-up{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
-.fade-up.visible{opacity:1;transform:translateY(0)}
+.anim{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.anim.show{opacity:1;transform:translateY(0)}
 </style>
 </head>
 <body>
@@ -113,7 +113,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem}
 </nav>
 
 <section class="hero">
-<div class="hero-content fade-up">
+<div class="hero-content anim">
 <div class="hero-badge">Inteligencia Artificial para Pymes</div>
 <h1>Soluciones de <span class="accent">IA</span> que impulsan tu Pyme</h1>
 <p>Ayudamos a pequeñas y medianas empresas en Chile a automatizar procesos, tomar mejores decisiones con datos y potenciar su marketing — todo con inteligencia artificial.</p>
@@ -126,23 +126,23 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem}
 
 <section id="servicios">
 <div class="container">
-<div class="section-header fade-up">
+<div class="section-header anim">
 <div class="section-label">Servicios</div>
 <h2 class="section-title">Tecnología al alcance de tu negocio</h2>
 <p class="section-subtitle">Implementamos soluciones de IA prácticas y accesibles, diseñadas específicamente para los desafíos reales de las pymes.</p>
 </div>
 <div class="services-grid">
-<div class="service-card fade-up">
+<div class="service-card anim">
 <div class="service-icon teal">⚙️</div>
 <h3>Automatización de Procesos</h3>
 <p>Eliminamos tareas repetitivas con flujos inteligentes. Desde gestión de agendas hasta facturación automatizada, liberamos tu tiempo para lo que importa.</p>
 </div>
-<div class="service-card fade-up">
+<div class="service-card anim">
 <div class="service-icon lavender">📊</div>
 <h3>Análisis de Datos</h3>
 <p>Transformamos tus datos en decisiones. Dashboards claros, reportes automáticos y predicciones que te ayudan a entender y anticipar el comportamiento de tu negocio.</p>
 </div>
-<div class="service-card fade-up">
+<div class="service-card anim">
 <div class="service-icon navy">🚀</div>
 <h3>Marketing Digital con IA</h3>
 <p>Campañas más inteligentes con segmentación avanzada, contenido generado con IA y optimización continua para maximizar tu retorno de inversión.</p>
@@ -153,28 +153,28 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem}
 
 <section id="portfolio">
 <div class="container">
-<div class="section-header fade-up">
+<div class="section-header anim">
 <div class="section-label">Portfolio</div>
 <h2 class="section-title">Proyectos que generan impacto</h2>
 <p class="section-subtitle">Soluciones reales que hemos desarrollado para empresas y organizaciones.</p>
 </div>
 <div class="portfolio-grid">
-<div class="project-card p1 fade-up">
+<div class="project-card p1 anim">
 <div class="project-tag">Regulación</div>
 <h3>RegulatorIA</h3>
 <p>Plataforma de inteligencia regulatoria que automatiza el seguimiento y análisis de normativas para empresas.</p>
 </div>
-<div class="project-card p2 fade-up">
+<div class="project-card p2 anim">
 <div class="project-tag">Normativa</div>
 <h3>TuNorma</h3>
 <p>Sistema inteligente de consulta normativa que simplifica el acceso y comprensión de regulaciones complejas.</p>
 </div>
-<div class="project-card p3 fade-up">
+<div class="project-card p3 anim">
 <div class="project-tag">Ciencia</div>
 <h3>ScienSolutions</h3>
 <p>Herramientas de IA para investigación científica: análisis de literatura, extracción de datos y generación de reportes.</p>
 </div>
-<div class="project-card p4 fade-up">
+<div class="project-card p4 anim">
 <div class="project-tag">Biotecnología</div>
 <h3>BioAI</h3>
 <p>Soluciones de inteligencia artificial aplicadas a biotecnología, optimizando procesos de análisis y descubrimiento.</p>
@@ -185,13 +185,13 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem}
 
 <section id="contacto">
 <div class="container">
-<div class="section-header fade-up">
+<div class="section-header anim">
 <div class="section-label">Contacto</div>
 <h2 class="section-title">¿Listo para potenciar tu negocio?</h2>
 <p class="section-subtitle">Cuéntanos sobre tu pyme y te proponemos una solución a tu medida.</p>
 </div>
 <div class="contact-grid">
-<div class="contact-info fade-up">
+<div class="contact-info anim">
 <h3>Hablemos</h3>
 <p>Estamos en Santiago, Chile, y trabajamos con pymes de todo el país. Escríbenos y te respondemos en menos de 24 horas.</p>
 <div class="contact-detail">
@@ -207,7 +207,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem}
 <span>Santiago, Chile</span>
 </div>
 </div>
-<form class="contact-form fade-up" action="https://formspree.io/f/placeholder" method="POST">
+<form class="contact-form anim" action="https://formspree.io/f/placeholder" method="POST">
 <div class="form-group">
 <label for="nombre">Nombre</label>
 <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
@@ -250,16 +250,19 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem}
 </footer>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  var hamburger = document.getElementById('hamburger');
-  var navLinks = document.getElementById('navLinks');
-  hamburger.addEventListener('click', function() { navLinks.classList.toggle('open'); });
-  navLinks.querySelectorAll('a').forEach(function(a) { a.addEventListener('click', function() { navLinks.classList.remove('open'); }); });
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-  document.querySelectorAll('.fade-up').forEach(function(el) { observer.observe(el); });
-});
+(function(){
+var h=document.getElementById('hamburger'),n=document.getElementById('navLinks');
+h.addEventListener('click',function(){n.classList.toggle('open')});
+n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open')})});
+var els=document.querySelectorAll('.anim');
+if('IntersectionObserver' in window){
+var io=new IntersectionObserver(function(entries){
+entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}})
+},{threshold:0,rootMargin:'0px 0px 0px 0px'});
+els.forEach(function(el){io.observe(el)});
+setTimeout(function(){els.forEach(function(el){var r=el.getBoundingClientRect();if(r.top<window.innerHeight&&r.bottom>0)el.classList.add('show')})},100);
+}else{els.forEach(function(el){el.classList.add('show')})}
+})();
 </script>
 </body>
 </html>
